@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #dddbdb;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(3, 3, 29);
+  color: white;
+  height: 100px;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  color: crimson;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  width: 260px;
+  padding: 7px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.searchBar button {
+  width: 100px;
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin-left: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+
+.favBtn {
+  background-color: crimson;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+ }
+
+/* Searched Movie Section */
+.container .searchedMovie h2 {
+  text-align: center;
+  font-size: 28px;
+  color: green;
+  margin-top: 28px; 
+}
+
+
+#movieCardSection .movieCard {
+  background-color: rgb(3, 3, 29);
+}
+
+#movieCardSection .movieCard .cardText h1 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+
+#movieCardSection .movieCard .cardText p {
+  color: white;
+}
+
+#movieCardSection .movieCard .cardText span {
+  color: green;
+}
+
+#movieCardSection .movieCard .cardText input {
+  padding: 3px;
+  text-align: center;
+  color: #000;
+  border-radius: 5px;
+  height: 35px;
+  width: auto;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+::placeholder {
+  color: black;
+  
+}
+
+.saveReviewBtn {
+  border: none;
+  background-color: orangered;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+ {
+  color: red;
+}
+
+/*Searched movie section ends here */
+
+
+
+/*recommended  movie section */
+.container .preFixedMovies h2 {
+  text-align: center;
+  font-size: 28px;
+  color: crimson;
+  margin-top: 28px;
+  font-weight: bold;
+}
+
+#preFixedMoviesList .movieCard {
+  background-color: #fff;
+}
+
+#preFixedMoviesList .movieCard .cardText h1 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #000;
+}
+
+#preFixedMoviesList .movieCard .cardText p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+#preFixedMoviesList .movieCard .cardText span {
+  color: black;
+  font-weight: 300;
+}
+/*recommended section ends*/ 
+
+
+/*favorite movie section*/
+.container .favorites h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #0c5957;
+  margin-top: 28px;
+}
+
+#favoritesList .movieCard {
+  background-color: #0c5957;
+}
+
+#favoritesList .movieCard .cardText h1 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+#favoritesList .movieCard .cardText p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#favoritesList .movieCard .cardText span {
+  color: #fff;
+  font-weight: 300;
+}
+
+/*favorite movie section ends*/
+
+.card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+  
+
+.movieCard {
+  display: flex;
+  background-color: #fff;
+  padding: 22px;
+  width: 1000px;
+  margin: 0 auto;
+  gap: 22px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.movieCard img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cardText {
+  flex: 1;
+}
+
+
+.cardText .rating {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+    
+}
+.cardText a {
+  display: inline-block;
+  background-color: orangered;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  margin-top: 15px;
+  border-radius: 4px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.addToFavBtn, .removeFromFavBtn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.removeFromFavBtn {
+  background-color: #dc3545;
+  border: none;
+}
+
+.in-favorites {
+  background-color: #dc3545;
+  color: white;
+  border: none;    
+}
+
+footer {
+  margin-top: 5rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+}
+
+footer p {
+ font-size: 1rem;
+ text-align: center;
+ 
+}
+
+footer a {
+ text-decoration: none;
+ color: crimson;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .movieCard {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+    }
+
+    .searchBar {
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .favBtn { 
+        margin-top: 1.5rem;
+     }     
+
+    .contact {
+        flex-direction: column;
+     }
+
+    .container .searchedMovie h2,
+    .container .preFixedMovies h2,
+    .container .favorites h2 {
+       font-size: 20px;
+     }    
+ 
+    .movieCard {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .movieCard img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+    .searchBar input {
+        width: 50%;
+    }
+
+    .searchBar button {
+        font-size: 15px;
+    }
+
+    .movieCard {
+        width: 90%;
+    }
+
+    .movieCard img {
+        width: 100%;
+    }
+
+    .addToFavBtn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
